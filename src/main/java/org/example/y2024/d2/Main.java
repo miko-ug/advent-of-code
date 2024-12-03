@@ -44,15 +44,6 @@ public class Main {
                 var trimmedReport = new ArrayList<>(report);
                 trimmedReport.remove(failedIndex-1);
                 var isTrinnedSafe = isSafe(trimmedReport,false);
-//                if(!isTrinnedSafe){
-//                    System.out.print(report);
-//                    System.out.print(" -> ");
-//                    System.out.print(intReport);
-//                    System.out.print(" (at "+failedIndex+")");
-//                    System.out.print(" -> ");
-//                    System.out.print(trimmedReport);
-//                    System.out.println();
-//                }
                 return isTrinnedSafe;
         }
         return isFallbackSafe;
